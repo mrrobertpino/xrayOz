@@ -1,6 +1,8 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>xrayOz — See Through the Web.</title><link rel='stylesheet' href='style.css'></head><body>
-<header><img src='oz.jpg'><div><h1>xrayOz <span>🩻</span></h1><p>See Through the Web.</p></div><div class='actions'><button id='uploadBtn'>Upload My Website</button><input id='file' type='file' accept='.html,text/html' hidden><select id='sample'><option value='basic'>Sample: Basic HTML</option><option value='interactive'>Sample: Interactive Website</option></select><button id='loadSample'>Use Sample Website</button><button id='clear'>Clear Selection</button></div></header>
-<div id='status'>Pick a sample or upload an HTML file to start investigating.</div>
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>xrayOz — See. Spot. Source.</title><link rel='stylesheet' href='style.css'></head><body>
+<header><img src='oz.jpg' alt='Oz'><div><h1>xrayOz <span>🩻</span></h1><p>See. Spot. Source.</p></div><button id='clear'>Clear Selection</button></header>
+<nav class='uploadbar'><div class='primary'><button id='uploadSite'>Upload Site</button><button id='exampleSite'>Example Site</button></div><div id='uploadTray' class='tray'><button id='htmlBtn' class='filebtn html-file'>Upload HTML</button><button id='cssBtn' class='filebtn css-file'>Upload CSS</button><button id='jsBtn' class='filebtn js-file'>Upload JavaScript</button></div><div id='exampleTray' class='tray'><button id='simpleBtn'>Simple Site</button><button id='fullBtn'>Full Site</button></div>
+<input id='htmlFile' type='file' accept='.html,text/html' hidden><input id='cssFile' type='file' accept='.css,text/css' hidden><input id='jsFile' type='file' accept='.js,text/javascript,application/javascript' hidden></nav>
+<div id='status'>Choose Upload Site or Example Site to start investigating.</div>
 <main><section><h2>HTML</h2><pre id='html'></pre></section><section><h2>CSS</h2><pre id='css'></pre></section><section><h2>JS</h2><pre id='js'></pre></section><section class='web'><h2>WEBSITE</h2><iframe id='preview' sandbox='allow-scripts'></iframe></section></main>
 <aside id='info'><b>Nothing selected.</b> Click something in the website or its code to x-ray it.</aside>
 <script src='app.js'></script></body></html>
